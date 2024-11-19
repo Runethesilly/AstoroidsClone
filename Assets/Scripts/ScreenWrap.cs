@@ -18,11 +18,24 @@ public class ScreenWrap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (transform.position.x > xMax)
+        {
+            transform.position = new Vector3(
+                transform.position.x,
+                transform.position.y,
+                xMin
+                );
+        }
         if (transform.position.x > xMin)
         {
-            xMin,
-                transform.position.y,
-                transform.position.x
+            transform.position = new Vector3(
+            xMax,
+                transform.position.x,
+                transform.position.y
+                );
         }
+
+
+
     }
 }
