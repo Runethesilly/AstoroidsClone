@@ -31,7 +31,6 @@ public class PlayerController : MonoBehaviour
     {
         //Thrust
         verticalInput = Input.GetAxis("Vertical");
-
         rb.AddRelativeForce(Vector3.forward * thrustSpeed * verticalInput);
     }
 }
