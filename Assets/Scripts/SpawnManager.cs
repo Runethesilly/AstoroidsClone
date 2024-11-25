@@ -17,7 +17,7 @@ public class SpawnManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Instantiate(Rock)
+            
         }
     }
 }

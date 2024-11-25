@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5185006226933150885}
   - component: {fileID: 3490863470313051910}
   m_Layer: 0
-  m_Name: Asteroid
+  m_Name: Asteroid.med 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,3 +127,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35006eff758bca647a7e3332a20c6a97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smallerSnowflake: {fileID: 4903804197723429790, guid: 1670b19af5429934d9e432ce5c68753d, type: 3}
+  smallerSnowflakesToSpawn: 2
