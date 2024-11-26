@@ -323,15 +323,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a9447f1a028e7b348b8764f94e36c6bd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.12
+      value: 1.62
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a9447f1a028e7b348b8764f94e36c6bd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.941
+      value: -1.072
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a9447f1a028e7b348b8764f94e36c6bd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.06
+      value: -5.63
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a9447f1a028e7b348b8764f94e36c6bd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -416,7 +416,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fddc8c7dbdb5e034d98524591712666d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Rock: 0
+  asteroidPrefab:
+  - {fileID: 3088249936296086129, guid: 870ca9d31bd1e1e4cad1066282d3d2c9, type: 3}
+  - {fileID: 4903804197723429790, guid: 33d906a03292fc347ab726448063a0f7, type: 3}
+  - {fileID: 4903804197723429790, guid: 1670b19af5429934d9e432ce5c68753d, type: 3}
+  AsteroidCount: 0
 --- !u!4 &702714367
 Transform:
   m_ObjectHideFlags: 0
@@ -432,27 +436,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1081017422 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3088249936296086129, guid: 870ca9d31bd1e1e4cad1066282d3d2c9, type: 3}
-  m_PrefabInstance: {fileID: 1457391872}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1081017429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1081017422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3534ab28a3ec4d47a5d31e2520759d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xMin: 0
-  xMax: 0
-  zMin: 0
-  zMax: 0
 --- !u!1001 &1457391872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -466,7 +449,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2418567522371326155, guid: 870ca9d31bd1e1e4cad1066282d3d2c9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.3720484
+      value: -6.21
       objectReference: {fileID: 0}
     - target: {fileID: 2418567522371326155, guid: 870ca9d31bd1e1e4cad1066282d3d2c9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -605,7 +588,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674196166}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: -6.65, z: -0.74}
+  m_LocalPosition: {x: -0, y: -4.76, z: -0.74}
   m_LocalScale: {x: 4.9, y: 3, z: 2.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -654,8 +637,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xMin: -15
   xMax: 15
-  zMin: -9
-  zMax: 9
+  zMin: -6
+  zMax: 6
 --- !u!54 &1738600952
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -692,6 +675,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3490863470313051910, guid: 1670b19af5429934d9e432ce5c68753d, type: 3}
+      propertyPath: smallerSnowflake
+      value: 
+      objectReference: {fileID: 4903804197723429790, guid: 1670b19af5429934d9e432ce5c68753d, type: 3}
     - target: {fileID: 3490863470313051910, guid: 1670b19af5429934d9e432ce5c68753d, type: 3}
       propertyPath: smallerSnowflakesToSpawn
       value: 0
