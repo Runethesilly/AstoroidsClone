@@ -13,10 +13,11 @@ GameObject:
   - component: {fileID: 6849187368506784331}
   - component: {fileID: 6658802092212391120}
   - component: {fileID: 5185006226933150885}
+  - component: {fileID: 3329932974369864578}
   - component: {fileID: 3490863470313051910}
   m_Layer: 0
   m_Name: Asteroid.small
-  m_TagString: Untagged
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,7 +101,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0
 --- !u!135 &5185006226933150885
 SphereCollider:
@@ -115,6 +116,22 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.0105454065
   m_Center: {x: -0.0081334505, y: 0.0025147721, z: -0.0042141816}
+--- !u!114 &3329932974369864578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4903804197723429790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3534ab28a3ec4d47a5d31e2520759d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xMin: -15
+  xMax: 15
+  zMin: -6
+  zMax: 6
 --- !u!114 &3490863470313051910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,3 +145,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   smallerSnowflake: {fileID: 4903804197723429790}
+  smallerSnowflakesToSpawn: 0
