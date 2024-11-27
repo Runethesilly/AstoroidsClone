@@ -8,11 +8,12 @@ public class AsteroidController : MonoBehaviour
     //Splitting Variables
     public GameObject smallerSnowflake;
     public int smallerSnowflakesToSpawn;
+    public GameManager gm;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
